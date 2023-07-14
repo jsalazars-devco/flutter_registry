@@ -16,9 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        flutter-version: stable
+      uses: subosito/flutter-action@v2.10.0
     - name: Build flutter web
       run: flutter build web --release
       
